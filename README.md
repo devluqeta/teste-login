@@ -32,8 +32,8 @@ Abra o XAMPP e inicie os serviços:
 - MySQL
 ```
 
-### 3. Configurar o banco de dados
-Acesse o phpMyAdmin (geralmente em http://localhost/phpmyadmin).
-Clique em Importar.
-Selecione o arquivo login_teste.sql que está dentro da pasta do projeto clonado.
-Clique em Executar.
+### 3. Configurar o banco de 
+    Acesse o phpMyAdmin (geralmente em http://localhost/phpmyadmin).
+    Clique em Importar.
+    Selecione o arquivo login_teste.sql que está dentro da pasta do projeto clonado.
+    Clique em Executar.
