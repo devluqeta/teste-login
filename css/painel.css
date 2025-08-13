@@ -1,0 +1,277 @@
+/* css/painel.css */
+:root {
+    --bg: #0b1220;
+    --bg2: #0f172a;
+    --card: rgba(255, 255, 255, .06);
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+    --primary: #4569e9;
+    --ok: #22c55e;
+    --danger: #ef4444;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body.dash-bg {
+    margin: 0;
+    font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    background: radial-gradient(1000px 600px at 15% 10%, #111827 0, transparent 60%),
+        radial-gradient(900px 500px at 85% 90%, #0b1220 0, transparent 60%),
+        linear-gradient(180deg, var(--bg), var(--bg2));
+    color: var(--text);
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    position: sticky;
+    top: 0;
+    background: rgba(11, 18, 32, .7);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+    z-index: 10;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.logo {
+    font-size: 22px;
+    filter: drop-shadow(0 6px 12px rgba(69, 137, 233, 0.5))
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.btn {
+    border: none;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: var(--primary);
+    color: #fff;
+    cursor: pointer
+}
+
+.btn.small {
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: .9rem
+}
+
+.btn.ghost {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .2)
+}
+
+.btn.danger {
+    background: var(--danger)
+}
+
+.grid {
+    padding: 22px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 16px;
+    padding: 16px;
+    min-height: 220px;
+    backdrop-filter: blur(8px);
+}
+
+.card.center {
+    display: grid;
+    place-items: center
+}
+
+.clock {
+    font-size: 42px;
+    letter-spacing: 1px
+}
+
+.todo {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px
+}
+
+.todo input {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, .07);
+    border: 1px solid transparent;
+    color: var(--text);
+}
+
+.todo-list {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    gap: 8px
+}
+
+.todo-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 8px 10px;
+    background: rgba(255, 255, 255, .06);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, .08)
+}
+
+.table-wrap {
+    overflow: auto;
+    max-height: 340px
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .95rem
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    border-bottom: 1px dashed rgba(255, 255, 255, .1)
+}
+
+.table th {
+    text-align: left;
+    color: #cbd5e1
+}
+
+#chartVendas {
+    width: 100%;
+    height: 260px
+}
+
+.footer {
+    padding: 14px 22px;
+    color: var(--muted)
+}
+
+/* ======================== CRUD e Inputs Modernos ======================== */
+
+.crud input[type="text"] {
+    width: calc(50% - 10px);
+    margin: 5px 5px 10px 0;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1e1e2f;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.crud input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px #4569e9;
+    background-color: #29293d;
+}
+
+.crud .btn {
+    padding: 10px 16px;
+    margin: 5px 0;
+    border-radius: 8px;
+    background-color: #4569e9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.crud .btn:hover {
+    background-color: #2c5ed4;
+    transform: translateY(-2px);
+}
+
+.btn.small {
+    padding: 4px 8px;
+    font-size: 0.85rem;
+}
+
+.btn.small.danger {
+    background-color: #ff4d4f;
+}
+
+.btn.small.danger:hover {
+    background-color: #e5393c;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table th,
+.table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #333;
+    text-align: left;
+    color: #fff;
+}
+
+.table th {
+    background-color: #1e1e2f;
+    font-weight: 600;
+}
+
+.table tr:nth-child(even) {
+    background-color: #252535;
+}
+
+.table tr:hover {
+    background-color: #2e2e4a;
+}
+
+h2 i {
+    margin-right: 8px;
+    color: #4569e9;
+}
+
+.todo input[type="text"] {
+    width: 70%;
+}
+
+.todo button {
+    width: 28%;
+}
+
+.clock {
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px 0;
+}
