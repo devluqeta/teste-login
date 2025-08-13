@@ -23,3 +23,21 @@ Abra o terminal ou Git Bash e execute:
 ```bash
 git clone https://github.com/devluqeta/teste-login.git
 ```
+
+### 2. Iniciar o XAMPP
+Abra o XAMPP e inicie os serviços:
+
+```text
+- Apache
+- MySQL
+```
+
+### 3. Configurar o banco de dados
+
+    Acesse o phpMyAdmin (geralmente em http://localhost/phpmyadmin).
+
+    Clique em Importar.
+
+    Selecione o arquivo login_teste.sql que está dentro da pasta do projeto clonado.
+
+    Clique em Executar.
