@@ -22,3 +22,4 @@ Abra o terminal ou Git Bash e execute:
 
 ```bash
 git clone https://github.com/devluqeta/teste-login.git
+```
