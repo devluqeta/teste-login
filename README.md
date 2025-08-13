@@ -24,6 +24,8 @@ Abra o terminal ou Git Bash e execute:
 git clone https://github.com/devluqeta/teste-login.git
 ```
 
+Recorte ou Copie a pasta para para a pasta `htdocs` dentro da pasta `xampp`.
+
 ### 2. Iniciar o XAMPP
 Abra o XAMPP e inicie os serviços:
 
@@ -40,7 +42,7 @@ Abra o XAMPP e inicie os serviços:
 
 ### 4. Acessar o sistema
     Abra o navegador e vá para:
-    http://localhost/nome-da-pasta-clonada
+    http://localhost/teste-login
 
 Use o usuário e senha padrão para login:
 
