@@ -1,5 +1,4 @@
 <?php
-// php/conexao.php
 declare(strict_types=1);
 
 $DB_HOST = 'localhost';

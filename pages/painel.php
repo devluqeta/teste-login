@@ -11,13 +11,9 @@ $username = $_SESSION['username'] ?? 'Usuário';
     <meta charset="utf-8">
     <title>Painel de Informações</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="../css/painel.css">
-    <!-- Boxicons CSS -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
     <?php include '../includes/favicon.php'; ?>
 </head>
 

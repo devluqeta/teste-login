@@ -1,5 +1,4 @@
 <?php
-// index.php
 declare(strict_types=1);
 
 ini_set('session.use_only_cookies', '1');
@@ -86,7 +85,6 @@ $authRequired = isset($_GET['auth']) ? 'Faça login para continuar.' : null;
         </footer>
     </div>
 
-    <!-- Scripts -->
     <script src="./js/index.js"></script>
 </body>
 
