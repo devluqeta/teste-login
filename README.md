@@ -37,3 +37,12 @@ Abra o XAMPP e inicie os serviços:
     Clique em Importar.
     Selecione o arquivo login_teste.sql que está dentro da pasta do projeto clonado.
     Clique em Executar.
+
+### 4. Acessar o sistema
+    Abra o navegador e vá para:
+    http://localhost/nome-da-pasta-clonada
+
+Use o usuário e senha padrão para login:
+
+    Usuário: admin
+    Senha: admin
